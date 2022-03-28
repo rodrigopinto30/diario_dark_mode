@@ -1,0 +1,374 @@
+body{
+}
+/* ESTILOS DEL NAVBAR*/
+.navbar{
+    justify-content: normal;
+    padding: 1% 2%;
+    margin-bottom: 4%;
+}
+.navbar .navbarPages{
+    width: 80%;
+}
+.navbar ul{
+    justify-content: center;
+}
+.navbar .btn-primary:hover{
+    background-color: white;
+    color: #0d6efd;
+}
+.navbar .btnInicio{
+    border-radius: 0%;
+}
+.navbar .cerrarSesion{
+    background-color: white;
+    color: red;
+    border-color: red;
+}
+.navbar .cerrarSesion:hover{
+    background-color: red;
+    color: white;
+}
+/* Estilo de navbar activado*/
+.active{
+    border-bottom-style: solid;
+    border-bottom-color: rgb(118, 122, 120);
+    border-bottom-width: 1px;
+}
+
+
+/* ESTILOS DEL BODY*/
+.container .row .col .card{
+    width: "100%";
+}
+/* Estilo del titulo*/
+.container .row .col .card .card-body .card-title{
+    width: 20rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/* Estilos del texto */
+.container .row .col .card .card-body .card-text{
+    height: 11rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+/* Estilo del boton */
+.container .row .col .card .card-body .btn{
+    border-radius: 0%;
+    width: 100%;
+}
+
+/* ESTILOS DEL FOOTER*/
+
+.footerContainer{
+    width: 100%;
+    text-align:start;
+    margin-top: 10%;
+}
+.footerContainer ul li{
+    list-style: none;
+    padding: 1% 0%;
+}
+.footerContainer ul li a{
+    color: #a3a3a3;
+    text-decoration: none;
+    
+}
+
+/* ESTILOS DEL MODE */
+.mode{
+    background-color: gray;
+    position: fixed;
+    left: 35%;
+    bottom: 5%;
+    height: 10%;
+    width: 30%;
+    z-index: 1;
+    border-radius: 40px;
+    border: 1px solid white;
+    
+    opacity: 0.3;
+    text-align: center;
+    transition: .2s;
+    
+    
+}
+.mode:hover{
+    background-color: white;
+    opacity: 1;
+    border: 1px solid #c3bebe;
+    width: 60%;
+    left: 20%;
+}
+
+/* ESTILOS DEL TOGGLE*/
+#toggle{
+    -webkit-appearance: none;
+    appearance: none;
+    height: 40px;
+    width: 75px;
+    position: absolute;
+    right: 0;
+    background-color: #15181f;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+}
+#toggle:after{
+    content: "";
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-color: #ffffff;
+    top: 5px;
+    left: 5px;
+    border-radius: 50%;
+}
+/* Estilos dark mode*/
+.dark-theme{
+    background-color: #15181f;
+    transition: 0.2s;
+}
+.dark-theme #toggle{
+    background-color: white;
+    
+}
+.dark-theme #toggle::after{
+    background-color: transparent;
+    box-shadow: 10px 10px #15181f;
+    top: -4px;
+    left: 30px;
+}
+.dark-theme #btnInicio{
+    color: white;
+}
+.dark-theme #darkCerrarSesion{
+    color: #ffffff;
+    border-color: rgb(149 0 0);
+    background-color: rgb(149 0 0);
+}
+.dark-theme #darkCerrarSesion:hover{
+    background-color: white;
+    color: rgb(149 0 0);
+}
+.dark-theme .darkCardBody{
+    background-color: #15181f;
+}
+.dark-theme .darkCardBody h5{
+    color: white;
+} 
+.dark-theme .darkCardBody p{
+    color: gray;
+}
+.dark-theme .darkCardBody .btnLeerNoticia{
+    background-color: #15181f;
+    color: white;
+}
+.dark-theme .darkCardBody .btnLeerNoticia:hover{
+    color: #15181f;
+    background-color: white;
+}
+.dark-theme .loginContainer .formContainer{
+    box-shadow: 1px 1px 5px 1px #262626;
+}
+.dark-theme .loginContainer .formContainer input{
+    background-color: #15181f;
+    color: white;
+}
+.dark-theme .loginContainer .formContainer .iniciarSesion{
+    background-color: #15181f;
+    color: white;
+}
+.dark-theme .loginContainer .formContainer .iniciarSesion:hover{
+    color: #15181f;
+    background-color: white;
+}
+.dark-theme .containerCarrusel .contenedorNoticiasCarrusel{
+    background-color: #31333c;
+}
+.dark-theme .containerCarrusel a{
+    color: white;
+}
+
+/* ESTILOS DEL FORMULARIO */
+.formContainer{
+    margin-top: 8%;
+    padding-top: 3%;
+    width: 38%;
+    margin-left: 30%;
+    height: 16rem;
+    text-align: center;
+    box-shadow: 1px 1px 5px 1px #efeaea;
+}
+.formContainer form{
+    width: 100%;
+    height: 100%;
+}
+.formContainer form div{
+    margin-bottom: 5%
+}
+.formContainer form .formUser{
+    text-align: center;
+}
+.formContainer form .formUser input{
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    text-align: center;
+    border-bottom-color: lightgray;
+}
+.formContainer form .formPassword{
+    text-align: center;
+}
+.formContainer form .formPassword input{
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    text-align: center;
+    border-bottom-color: lightgray;
+}
+.formContainer form div .iniciarSesion{
+    margin-top: 2%;
+    width: 39%;
+    background-color: white;
+    color: black;
+}
+.formContainer form div .iniciarSesion:hover{
+    background-color: black;
+    color: white;
+}
+.formContainer form div .btnGoogle{
+    width: 39%;
+}
+/* ESTILOS CARRUSEL*/
+.containerCarrusel{
+    width: 100%;
+    overflow: hidden;
+    height: 9rem;
+    text-align: center;
+    padding: 0 16%;
+    margin-top: 5%;
+}
+.containerCarrusel .contenedorNoticiasCarrusel{
+    background-color: #efefef;
+}
+.containerCarrusel a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.containerCarrusel .slick-arrow{
+    border-radius: 12px;
+    background-color: black;    
+}
+
+/* ESTILO DEL HOME*/
+.homeContainer{
+    text-align: initial;
+}
+.container .row{
+    margin-bottom: 3%;
+}
+.row div .card{
+    border-style: none;
+}
+.btnLeerNoticia{
+    width: 100%;
+    color: black;
+    background-color: lightgray;
+    border-color: white;
+}
+.btnLeerNoticia:hover{
+    color: white;
+    background-color: black;
+    border-color: white;
+}
+.homeContainer .primeraSeccion #primeraNoticia .card .card-body .card-title{
+    font-size: 2rem;
+    height: 10rem;
+}
+.homeContainer .primeraSeccion #segundaNotica{
+    overflow: hidden;
+    max-height: 15rem;
+}
+.homeContainer .primeraSeccion #segundaNoticia .card .card-body .card-title{
+    height: 5rem;
+    overflow: hidden;
+}
+.homeContainer .primeraSeccion #segundaNoticia .card .card-body .card-text{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 4rem;
+}
+.homeContainer .terceraSeccion #primeraNoticia .card{
+    width: 100%;
+    height: 100%;
+}
+.homeContainer .terceraSeccion #primeraNoticia .card .card-body .cardTextPrimera{
+    font-size: 90%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 4.8rem;
+}
+.homeContainer .terceraSeccion #primeraNoticia .card .card-body .cardTitlePrimera{
+    height: 80%;
+}
+
+/*PAGINA POLITICA*/
+.politicaContainer .segundaSeccionPolitica{
+        height: 12rem;
+}
+.politicaContainer .segundaSeccionPolitica .row{
+    height: 100%;
+}
+.politicaContainer .segundaSeccionPolitica .row .col{
+    height: 100%;
+}
+.politicaContainer .segundaSeccionPolitica .row .col .card{
+    height: 100%;
+}
+.politicaContainer .segundaSeccionPolitica .row .col .card .card-body .card-title{
+    width: 100%;
+    white-space: normal;
+    overflow: unset;
+    text-overflow: initial;
+    height: 77%;
+    font-size: 2rem;
+}
+.politicaContainer .terceraSeccionPolitica{
+    height: 13rem;
+}
+.politicaContainer .terceraSeccionPolitica .row{
+    height: 100%;
+}
+.politicaContainer .terceraSeccionPolitica .row .col{
+    height: 100%;
+}
+.politicaContainer .terceraSeccionPolitica .row .col .card{
+    height: 100%;
+}
+.politicaContainer .terceraSeccionPolitica .row .col .card .card-body{
+    height: 100%;
+}
+.politicaContainer .terceraSeccionPolitica .row .col .card .card-body .card-title{
+    width: 100%;
+    height: 80%;
+    font-size: 1.5rem;
+    white-space: normal;
+    overflow: unset;
+    text-overflow: initial;   
+}
+
+/* PAGINA TENDENCIA */
+.tendenciaContainer .row{
+    height: 13rem;
+}
+.tendenciaContainer .row .col .card{
+    height: 100%;
+}
+.tendenciaContainer .row .col .card .card-body .card-title{
+    height: 80%;
+    white-space: normal;
+}
