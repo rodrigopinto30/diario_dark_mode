@@ -28,7 +28,7 @@ export function Navbar(){
         return(
             <div className="navbar">
                 <div className="navbarLogo">
-                <a href="#" className="btn btnInicio" id="btnInicio"> El Diario </a>
+                    <NavLink to="/" className="btn btnInicio" id="btnInicio"> El Diario </NavLink>
                 </div>
               {cookies.get('user') === userLog.user ?
                 <div className="navbarPages">

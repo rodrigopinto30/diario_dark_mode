@@ -109,7 +109,7 @@ body{
     height: 40px;
     width: 75px;
     position: absolute;
-    right: 0;
+    right: 1%;
     background-color: #15181f;
     border-radius: 20px;
     outline: none;
@@ -142,6 +142,7 @@ body{
 }
 .dark-theme #btnInicio{
     color: white;
+    border-bottom-color: #15181f;
 }
 .dark-theme #darkCerrarSesion{
     color: #ffffff;
@@ -371,4 +372,86 @@ body{
 .tendenciaContainer .row .col .card .card-body .card-title{
     height: 80%;
     white-space: normal;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 1024px){
+    .navbar .navbarPages{
+        width: 76%;
+    }
+}
+@media screen and (max-width: 800px){
+    /* Navbar */
+    .navbar .navbarPages{
+        width: 66%;
+    }
+    .navbar #toggle{
+        right: 2%;
+    }
+    /* Login */
+    .loginContainer .formContainer{
+        height: 13rem;
+    }
+    .contenedorNoticiasCarrusel a{
+        font-size: 1rem;
+    }
+    /* Seccion home */
+    .homeContainer .terceraSeccion #primeraNoticia{
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    .homeContainer .terceraSeccion #primeraNoticia .cardTitlePrimera{
+        height: 54%;
+    }
+    /* Seccion politica*/
+    .politicaContainer {
+        margin-bottom: 20%;
+    }
+    .politicaContainer .primeraSeccionPolitica .row .col-md-3 .card h5{
+        height: 4rem;
+        overflow: hidden;
+        font-size: 1.2rem
+    }
+    .politicaContainer .segundaSeccionPolitica{
+        margin-bottom: 6%;
+    }
+    .politicaContainer .terceraSeccionPolitica .row .col{
+        width: 100%;
+    }
+    .politicaContainer .terceraSeccionPolitica .row .col .card .card-body .card-title{
+        font-size: 1.1rem;
+    }
+
+    /*Seccion tendencia*/
+    .tendenciaContainer .row{
+        height: 100%;
+    }
+    .tendenciaContainer .row .col{
+        width: 33%;
+        overflow: hidden;
+    }
+    .tendenciaContainer .row .col .card .card-title{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 600px){
+    .navbar .navbarPages{
+        width: 52%;
+    }
+    .navbar .navbarLogo #btnInicio{
+        border-bottom-color: white;
+    }
+    .navbar .navbarPages .nav{
+        justify-content: start;
+    }
+    .navbar .navbarPages .nav .nav-item{
+        text-align: center;
+    }
+    .navbar .navbarPages .nav .nav-item .nav-link{
+        font-size: 80%;
+        width: 100%;
+    }
+    .container .row .col .card .card-body .card-title{
+        width: 9rem;
+    }
 }

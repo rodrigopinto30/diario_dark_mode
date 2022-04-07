@@ -1,7 +1,19 @@
 import React from "react";
+import Cookies from "universal-cookie";
 
 export function Politica(){
+    const cookies = new Cookies();
     
+    const checkLog=()=>{
+        if(!cookies.get('user') || !cookies.get('password')){
+            window.location.href="./login";
+        }
+    }
+
+    React.useEffect(()=>{
+        checkLog();
+    },[])
+
         return(
             <div className="politicaContainer">
                 <div className="container primeraSeccionPolitica">
